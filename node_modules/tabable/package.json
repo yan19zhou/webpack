@@ -1,0 +1,21 @@
+{
+  "name": "tabable",
+  "version": "1.0.0",
+  "description": "A simple module to set tab indices on elements.",
+  "main": "index.js",
+  "scripts": {
+  },
+  "keywords": [
+    "tab index",
+    "tabable"
+  ],
+  "repository": {
+    "git": "https://github.com/honeinc/tabable"
+  },
+  "author": "Andy Burke <aburke@bitflood.org>",
+  "license": "MIT",
+  "devDependencies": {
+  },
+  "dependencies": {
+  }
+}
