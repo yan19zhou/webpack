@@ -2,7 +2,7 @@
  * @Description: @Description
  * @Author: zhouy
  * @Date: 2021-11-30 14:28:16
- * @LastEditTime: 2021-12-01 14:48:37
+ * @LastEditTime: 2021-12-01 15:23:12
  * @LastEditors: zhouy
  */
 /* 
@@ -176,7 +176,6 @@ class Compiler {
     const ast = require("@babel/parser").parse(this.moduleCode, {
       sourceType: "module",
     });
-    console.log("--------------------------------------");
     traverse(ast, {
       CallExpression: (nodePath) => {
         const node = nodePath.node;
