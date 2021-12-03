@@ -2,7 +2,7 @@
  * @Description: @Description
  * @Author: zhouy
  * @Date: 2021-12-02 11:59:27
- * @LastEditTime: 2021-12-02 15:35:04
+ * @LastEditTime: 2021-12-02 17:19:17
  * @LastEditors: zhouy
  */
 // loader-runner 入口文件
@@ -84,15 +84,16 @@ const resolveLoader = (loader) => path.resolve(__dirname, "./loaders", loader);
 loaders = loaders.map(resolveLoader);
 
 runLoaders(
-  {
-    resource: filePath, // 加载的模块路径
-    loaders, //需要处理的loader数组
-    context: { name: "qct" }, // 传递的上下文对象
-    readResource: fs.readFileSync.bind(fs), //读取文件的方法
-    //processResource
-  },
-  (error, result) => {
-    console.log(error, "存在的错误");
-    console.log(result, "结果");
-  }
-);
+    {
+      resource: filePath, // 加载的模块路径
+      loaders, // 需要处理的loader数组
+      context: { name: '19Qingfeng' }, // 传递的上下文对象
+      readResource: fs.readFile.bind(fs), // 读取文件的方法
+      // processResource 参数先忽略
+    },
+    (error, result) => {
+      console.log(error, '存在的错误');
+      console.log(result, '结果');
+    }
+  );
+
