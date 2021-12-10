@@ -2,7 +2,7 @@
  * @Description: @Description
  * @Author: zhouy
  * @Date: 2021-12-09 10:55:38
- * @LastEditTime: 2021-12-09 18:32:15
+ * @LastEditTime: 2021-12-10 10:29:21
  * @LastEditors: zhouy
  */
 const path = require("path");
@@ -24,7 +24,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "[name].js",
-    clean: true,
+    clean: true,// 清除目录
   },
   devtool: "inline-source-map",
   devServer: {
